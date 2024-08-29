@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fielsset Form</title>
+  </head>
+  <body bgcolor="pink">
+    <form name="fieldform">
+      Please fill out the form completely.
+      <br /><br />
+      <fieldset>
+        <legend>Personal Information</legend>
+        First Name:
+        <input type="text" name="fname" />
+        <br /><br />
+        Last Name:
+        <input type="text" name="lname" />
+        <br /><br />
+        Street:
+        <input type="text" name="sname" />
+        <br /><br />
+        City:
+        <input type="text" name="city" required />
+        <br /><br />
+        State:
+        <select name="state">
+          <option value="s" selected disabled>__</option>
+
+          <option value="s">Noida</option>
+          <option value="s">G. Noida</option>
+          <option value="s">Delhi</option>
+          <option value="s">New Delhi</option>
+          <option value="s">Meerut</option>
+        </select>
+        <br /><br />
+        Zip:
+        <input type="number" name="n" />
+        <br />
+      </fieldset>
+      <br /><br />
+      <fieldset>
+        <legend>OtherForm Elements</legend>
+        Do you have a pet dog?
+
+        <input type="radio" name="d" />Yes <input type="radio" name="d" />No
+        <br /><br />
+        If yes, how many?
+        <input type="radio" name="h" />One <input type="radio" name="h" />Two
+        <input type="radio" name="h" />More then two <br /><br />
+
+        What breed of dog have you had as a pet? (check all that apply) <br />
+        <input type="checkbox" name="b" />Bulldog
+        <input type="checkbox" name="b" />Basset Hound
+        <input type="checkbox" name="b" />Golden retriever <br /><br />
+
+        Tells us about your favourite dog:
+        <br /><br />
+        <textarea name="fd " required rows="10" cols="100"></textarea>
+      </fieldset>
+    </form>
+  </body>
+</html>
